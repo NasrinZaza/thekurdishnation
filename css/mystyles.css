@@ -1,0 +1,70 @@
+#s3 {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff; 
+}
+
+
+#s3 article {
+    display: flex;
+    flex-flow: column nowrap;
+    margin:20px;
+	background:#ffffff;
+    /*height:600px;*/
+	position:relative;
+    flex:1 100%;
+    border: 1px black solid;
+}
+
+.icon-wrapper {
+    max-height: 100px;
+    max-width: 100px;
+    width: 100%;
+    padding:0px;
+    border: 1px red solid;
+    margin: 0 auto;
+    
+}
+
+
+
+#s3 article p {
+	padding:10px 10px;
+	/*position:absolute;
+	bottom:0;
+	left:0;*/
+    width:100%;
+    font-family: acumin-pro-wide, sans-serif;
+    border: 1px green solid;
+}
+
+
+/* ===== TABLET LAYOUT ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+    #s3 article {
+		flex:1 auto;
+	}
+	.multi {
+    	column-count: 3;
+	}
+}
+
+
+/* ===== DESKTOP LAYOUT ===== */
+/* Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    .icon-wrapper {
+        max-height: 200px;
+        max-width:200px;
+        margin: 0 auto;
+    }
+    
+    #s3 article {
+        flex: 1 30%;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map with href on areas and plotted cities</title>
+  
+     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+            charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+    <script src="mapael.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="extra.js" charset="utf-8"></script>
+   
+    <!-- <script type="text/javascript">
+
+    </script> -->
+
+</head>
+
+<body>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      Information
+    </div>
+  
+</div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()">open</span>
+
+  <!-- Map Element -->
+<div class="container">
+
+    <h1>Map with href on areas and plotted cities</h1>
+
+    <div class="test">test: 
+        <span>
+            asdasdhe plots on the map in order to show information in this div.</span>
+    </div>
+    <div class="mapcontainer">
+        <div class="map">
+            <span>Alternative content for the map</span>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
