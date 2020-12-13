@@ -1,0 +1,82 @@
+/* JS show-on-scroll Animations */
+  .slide-up {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all 1s 0.2s ease-out;
+  /*	will-change: all;*/
+  }
+  
+  .slide-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slide-up-slower {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all .6s .6s ease-out;
+  /*	will-change: all;*/
+  }
+  
+  .slide-up-slower.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slide-up-slowest {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all .7s .7s ease-out;
+  /*	will-change: all;*/
+  }
+  
+  .slide-up-slowest.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+/* arrow animation: https://codepen.io/bisaillonyannick/pen/pvZeGg */
+
+a { 
+  color: rgb(255, 208, 0);
+  text-decoration: none;
+  margin-top: 30vh;
+  }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+  
+
+/* ===== TABLET LAYOUT ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+/*@media only screen and (min-width: 481px) {
+
+}
+
+
+/* ===== DESKTOP LAYOUT ===== */
+/*Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout.*/
+
+/*@media only screen and (min-width: 769px) {
+
+}
